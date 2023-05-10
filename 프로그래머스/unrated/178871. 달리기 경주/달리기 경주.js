@@ -21,12 +21,7 @@ function solution(players, callings) {
         players[calledPlayerIndex] = frontPlayer;
         playerFinderMap.set(calledPlayer, calledPlayerIndex - 1)
         playerFinderMap.set(frontPlayer, calledPlayerIndex)
-        // console.log(frontPlayer, calledPlayer, calledPlayerIndex,players)
     }
-    
-    // const answer = [];
-    // playerFinderMap.forEach((index, player) => answer[index] = player);
-    // console.log(answer);
     
     return players;
 }
